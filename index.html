@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- =================================================================== -->
+    <!-- ============== SEO: 1. العنوان الوصفي (Title Tag) ============== -->
+    <!-- هذا هو أهم عنصر في السيو. يظهر في تبويب المتصفح وكنتيجة رئيسية في بحث جوجل. -->
+    <!-- يجب أن يحتوي على اسم الشركة، الخدمة الرئيسية، والمدينة المستهدفة. -->
+    <!-- =================================================================== -->
+    <title>
+      M2 للأبواب الأوتوماتيكية | تركيب وصيانة أبواب رولينج وسحاب في بنها
+    </title>
+
+    <!-- =================================================================== -->
+    <!-- =========== SEO: 2. الوصف التعريفي (Meta Description) ========== -->
+    <!-- هذا هو النص الذي يظهر تحت العنوان في نتائج بحث جوجل. -->
+    <!-- يجب أن يكون جذاباً ويدفع المستخدم للضغط على الرابط. -->
+    <!-- =================================================================== -->
+    <meta
+      name="description"
+      content="شركة M2 رائدة في تركيب وصيانة الأبواب الأوتوماتيكية في بنها. نقدم أبواب رولينج إيطالي، مواتير أبواب جرار ومفصلية بجودة عالية وضمان معتمد. تواصل معنا الآن."
+    />
+
+    <!-- =================================================================== -->
+    <!-- ============= SEO: 3. الكلمات المفتاحية (Keywords) ============ -->
+    <!-- لم تعد بنفس أهميتها السابقة لجوجل، لكنها لا تضر. ضع هنا الكلمات التي قد يبحث بها العميل. -->
+    <!-- =================================================================== -->
+    <meta
+      name="keywords"
+      content="أبواب أوتوماتيكية, أبواب رولينج, مواتير أبواب, صيانة أبواب, تركيب أبواب في بنها, M2 Automatic Door, باب سحاب, باب مفصلي"
+    />
+
+    <!-- Favicon (أيقونة الموقع) -->
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg" />
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome (for icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Google Fonts (Cairo for Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* استخدام خط Cairo للمحتوى العربي */
+      body {
+        font-family: "Cairo", sans-serif;
+      }
+      /* تأثير التدرج اللوني للخلفية */
+      .gradient-bg {
+        background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+      }
+      .hero-gradient-bg {
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("images/logo.jpg") no-repeat center center;
+        background-size: cover;
+      }
+      /* تأثير توهج للبطاقات عند المرور عليها */
+      .card-hover-effect {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card-hover-effect:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(249, 115, 22, 0.2),
+          0 10px 10px -5px rgba(249, 115, 22, 0.1);
+      }
+    </style>
+
+    <!-- =================================================================== -->
+    <!-- ========= SEO: 4. Schema Markup (JSON-LD) for Local Business ====== -->
+    <!-- هذا الكود المتقدم يساعد جوجل على فهم نشاطك التجاري بشكل دقيق (اسم، عنوان، هاتف، خدمات). -->
+    <!-- هذا يعزز ظهورك في النتائج المحلية والخرائط. قم بتعبئة البيانات بدقة. -->
+    <!-- =================================================================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "M2 Automatic Door",
+        "image": "images/logo.jpg",
+        "@id": "",
+        "url": "https://sites.google.com/view/m2-automatic-door", // <-- SEO: ضع هنا رابط الموقع بعد نشره
+        "telephone": "+201026732683",
+        "description": "الريادة في عالم الأبواب الأوتوماتيكية من قلب بنها. تركيب وصيانة جميع أنواع الأبواب والمواتير.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "بنها",
+          "addressRegion": "القليوبية",
+          "addressCountry": "EG"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "22:00"
+        }
+      }
+    </script>
+  </head>
+  <body class="gradient-bg text-white">
+    <!-- Header & Hero Section -->
+    <header
+      id="home"
+      class="hero-gradient-bg min-h-screen flex flex-col items-center justify-center text-center p-8 relative"
+    >
+      <div class="absolute top-8 left-8">
+        <!-- SEO: 5. استخدم لوجو واضح واسم الشركة -->
+        <img
+          src="images/logo.jpg"
+          alt="شعار شركة M2 للأبواب الأوتوماتيكية"
+          class="h-16 w-16 object-contain rounded-full border-2 border-orange-500"
+        />
+      </div>
+
+      <!-- =================================================================== -->
+      <!-- =========== SEO: 6. العنوان الرئيسي (H1) ======================= -->
+      <!-- يجب أن يكون لديك H1 واحد فقط في الصفحة. وهو أهم عنوان للمحتوى. -->
+      <!-- =================================================================== -->
+      <h1
+        class="text-4xl md:text-6xl font-black uppercase tracking-wider mb-4"
+        style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)"
+      >
+        <span class="text-orange-500">M2</span> للأبواب الأوتوماتيكية
+      </h1>
+      <p
+        class="text-lg md:text-2xl max-w-3xl mx-auto mb-8 text-gray-300"
+        style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7)"
+      >
+        الريادة تبدأ من هنا. حلول مبتكرة وآمنة للمنازل والمصانع والمتاجر في قلب
+        بنها.
+      </p>
+      <a
+        href="#contact"
+        class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg"
+      >
+        تواصل معنا الآن
+      </a>
+    </header>
+
+    <main>
+      <!-- Services Section -->
+      <section id="services" class="py-20 px-8">
+        <div class="container mx-auto text-center">
+          <!-- =================================================================== -->
+          <!-- =========== SEO: 7. العناوين الفرعية (H2) ===================== -->
+          <!-- استخدم H2 لتقسيم محتوى الصفحة إلى أقسام منطقية. -->
+          <!-- =================================================================== -->
+          <h2 class="text-3xl md:text-4xl font-bold mb-2">خدماتنا المتكاملة</h2>
+          <p class="text-orange-400 mb-12">
+            جودة إيطالية... بأيدي مصرية محترفة
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Service Card 1 -->
+            <div
+              class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl shadow-lg card-hover-effect"
+            >
+              <!-- SEO: 8. تأكد من أن الصور لها نفس الأبعاد -->
+              <img
+                src="images/03.jpeg"
+                alt="تركيب باب رولينج شاتر إيطالي"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-xl font-bold mb-2 text-orange-500">
+                أبواب رولينج إيطالي
+              </h3>
+              <p class="text-gray-400">
+                مثالية للمحلات والمخازن والجراجات، تتوفر بنظام عادي أو
+                أوتوماتيك.
+              </p>
+            </div>
+            <!-- Service Card 2 -->
+            <div
+              class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl shadow-lg card-hover-effect"
+            >
+              <img
+                src="images/02.jpeg"
+                alt="موتور باب جرار منزلق للفلل"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-xl font-bold mb-2 text-orange-500">
+                مواتير أبواب جرار
+              </h3>
+              <p class="text-gray-400">
+                حلول فعالة للمداخل الواسعة والفلل، تضمن سهولة الحركة والأمان.
+              </p>
+            </div>
+            <!-- Service Card 3 -->
+            <div
+              class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl shadow-lg card-hover-effect"
+            >
+              <img
+                src="images/01.jpeg"
+                alt="تركيب موتور لباب مفصلي"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-xl font-bold mb-2 text-orange-500">
+                أبواب مفصلية
+              </h3>
+              <p class="text-gray-400">
+                مواتير قوية للأبواب المفصلية (مفردة أو مزدوجة) للمداخل الخاصة
+                والفيلات.
+              </p>
+            </div>
+            <!-- Service Card 4 -->
+            <div
+              class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl shadow-lg card-hover-effect"
+            >
+              <img
+                src="images/04.jpg"
+                alt="موتور الباب الصاج الصيني بمعايير أوروبية"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-xl font-bold mb-2 text-orange-500">
+                موتور الباب الصاج
+              </h3>
+              <p class="text-gray-400">
+                صيني بمعايير أوروبية، حل اقتصادي وعملي مع صيانة شاملة لكل
+                الأنواع.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section id="why-us" class="py-20 px-8 bg-gray-900/50">
+        <div class="container mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-2">لماذا تختار M2؟</h2>
+            <p class="text-orange-400">الجودة والالتزام هما أساس عملنا</p>
+          </div>
+          <div class="flex flex-wrap items-center -mx-4">
+            <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+              <!-- يمكنك وضع صورة توضيحية هنا -->
+              <img
+                src="images/logo.jpg"
+                alt="عامل فني يقوم بتركيب باب أوتوماتيكي"
+                class="rounded-2xl shadow-2xl w-full"
+              />
+            </div>
+            <div class="w-full md:w-1/2 px-4">
+              <ul class="space-y-6">
+                <li class="flex items-start gap-6">
+                  <div
+                    class="bg-orange-500/20 text-orange-400 rounded-full p-3 mr-4"
+                  >
+                    <i class="fa-solid fa-medal fa-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-xl">جودة إيطالية وضمان</h4>
+                    <p class="text-gray-400">
+                      نستخدم أفضل المنتجات الإيطالية مع ضمان معتمد على التركيب
+                      والمواتير.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-6">
+                  <div
+                    class="bg-orange-500/20 text-orange-400 rounded-full p-3 mr-4"
+                  >
+                    <i class="fa-solid fa-bolt fa-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-xl">سرعة في التركيب والصيانة</h4>
+                    <p class="text-gray-400">
+                      استجابة فورية لطلبات التركيب والصيانة لضمان راحة عملائنا.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-6">
+                  <div
+                    class="bg-orange-500/20 text-orange-400 rounded-full p-3 mr-4"
+                  >
+                    <i class="fa-solid fa-headset fa-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-xl">خدمة ما بعد البيع</h4>
+                    <p class="text-gray-400">
+                      دعم فني متواصل بأعلى مستوى من الاحترافية لضمان رضاك
+                      الكامل.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 px-8">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-2">تواصل معنا</h2>
+          <p class="text-orange-400 mb-12">جاهزون لخدمتك على مدار الساعة</p>
+          <div class="max-w-md mx-auto">
+            <!-- Phone Numbers -->
+            <div class="bg-gray-800/50 p-6 rounded-2xl mb-6 text-center">
+              <h3 class="text-xl font-bold mb-4">عبر الهاتف أو واتساب</h3>
+              <!-- SEO: 9. اجعل أرقام الهواتف قابلة للضغط للاتصال المباشر -->
+              <a
+                href="tel:01026732683"
+                class="block text-2xl font-bold my-2 hover:text-orange-500 transition-colors duration-300"
+              >
+                <i class="fa-solid fa-phone mr-2"></i> 01026732683
+              </a>
+              <a
+                href="tel:01119961062"
+                class="block text-2xl font-bold my-2 hover:text-orange-500 transition-colors duration-300"
+              >
+                <i class="fa-solid fa-mobile-screen-button mr-2"></i>
+                01119961062
+              </a>
+            </div>
+
+            <!-- Social Media -->
+            <div class="bg-gray-800/50 p-6 rounded-2xl text-center">
+              <h3 class="text-xl font-bold mb-4">
+                أو تابعنا على السوشيال ميديا
+              </h3>
+              <div class="flex justify-center gap-4 text-5xl">
+                <!-- SEO: 10. ضع روابط السوشيال ميديا الصحيحة -->
+                <a
+                  href="https://www.facebook.com/profile.php?id=61561735769917&rdid=iDvNCwYJNiFnqI2G#"
+                  target="_blank"
+                  class="text-gray-400 hover:text-blue-500 transition-colors duration-300"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a
+                  href="https://wa.me/201026732683"
+                  target="_blank"
+                  class="text-gray-400 hover:text-green-500 transition-colors duration-300"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+                <a
+                  href="https://www.tiktok.com/@m2.automatic_door"
+                  target="_blank"
+                  class="text-gray-400 hover:text-white transition-colors duration-300"
+                  ><i class="fab fa-tiktok"></i
+                ></a>
+                <a
+                  href="https://wa.me/201119961062"
+                  target="_blank"
+                  class="text-gray-400 hover:text-green-500 transition-colors duration-300"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-6 px-8 text-center text-gray-500">
+      <div class="container mx-auto">
+        <p>&copy; 2024 M2 Automatic Door. كل الحقوق محفوظة.</p>
+        <p class="text-sm mt-2">
+          تصميم وتطوير بواسطة
+          <a
+            href="https://wa.me/201007218535"
+            target="_blank"
+            class="text-orange-500 hover:underline"
+            >Ibrahim Fares</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
